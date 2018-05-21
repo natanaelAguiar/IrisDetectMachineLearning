@@ -24,4 +24,4 @@ print("Predicted target name: {}".format(iris_dataset['target_names']
 y_pred = knn.predict(X_test)
 print("Test set predictions ml:\n {}".format(y_pred))
 print("Test set predictions test:\n {}".format(y_test))
-print("Test set score:{:.2f}".format(knn.mean(y_pred, y_test)))
+print("Test set score:{:.2f}".format(knn.mean(X_test, y_test)))
